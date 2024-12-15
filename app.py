@@ -11,18 +11,26 @@ import seaborn as sns
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 from sklearn.ensemble import RandomForestClassifier
 from predict import show_predict
+import os 
+import gdown
 
+file_id = "11IKkThWVbzGdGZwCOpfj_MKg99KaCwlu"
+url = f"https://drive.google.com/uc?id={file_id}"
+file_name = "train_data_EDA.csv"
 
+# Download the file if not present
+if not os.path.exists(file_name):
+    gdown.download(url, file_name, quiet=False)
 
 # Load the logo
 img = Image.open("24_Nexus_Analytics.png")
 logo = Image.open("Nova_IMS.png")
 
 #load Data for vizualizations 
-df= pd.read_csv("train_data_EDA.csv")
+df= pd.read_csv("file_name")
 county_df = pd.read_csv("geo_county.csv")
 
-# Define the navigation menu
+# Define the navigation menugit add data/train_data_EDA.csv
 def streamlit_menu():
     selected = option_menu(
         menu_title=None,
