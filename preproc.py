@@ -96,16 +96,9 @@ def preproc_(path):
 
     user_input.drop(columns = drop, axis = 1, inplace = True)
 
-    # Reading the train data
-    file_id = "11IKkThWVbzGdGZwCOpfj_MKg99KaCwlu"
-    url = f"https://drive.google.com/uc?id={file_id}"
-    file_name = "train_data_EDA.csv"
+   
 
-    # Download the file if not present
-    if not os.path.exists(file_name):
-        gdown.download(url, file_name, quiet=False)
-
-    df= pd.read_csv(file_name,
+    df= pd.read_csv("train_data_EDA.csv",
                     index_col='Claim Identifier')
     
     # Split the DataFrame into features (X) and target variable (y)

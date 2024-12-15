@@ -14,14 +14,6 @@ from predict import show_predict
 import os 
 import gdown
 
-#file_id = "11IKkThWVbzGdGZwCOpfj_MKg99KaCwlu"
-#url = f"https://drive.google.com/uc?id={file_id}"
-#file_name = "train_data_EDA.csv"
-
-# Download the file if not present
-#if not os.path.exists(file_name):
-    #gdown.download(url, file_name, quiet=False)
-
 # Load the logo
 img = Image.open("24_Nexus_Analytics.png")
 logo = Image.open("Nova_IMS.png")
