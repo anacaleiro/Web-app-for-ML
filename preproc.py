@@ -95,7 +95,7 @@ def preproc_(path):
     user_input.drop(columns = drop, axis = 1, inplace = True)
 
     # Reading the train data
-    df= pd.read_csv("/Users/anaca/Documents/GitHub/machine_learning/web_app/train_data_EDA.csv",
+    df= pd.read_csv("/Users/anaca/Documents/GitHub/Web-app-for-ML/train_data_EDA.csv",
                     index_col='Claim Identifier')
     
     # Split the DataFrame into features (X) and target variable (y)

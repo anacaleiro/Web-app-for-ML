@@ -19,8 +19,8 @@ img = Image.open("24_Nexus_Analytics.png")
 logo = Image.open("Nova_IMS.png")
 
 #load Data for vizualizations 
-df= pd.read_csv("train_data_EDA.csv")
-county_df = pd.read_csv("geo_county.csv")
+df= pd.read_csv("/Users/anaca/Documents/GitHub/Web-app-for-ML/train_data_EDA.csv")
+county_df = pd.read_csv("/Users/anaca/Documents/GitHub/Web-app-for-ML/geo_county.csv")
 
 # Define the navigation menu
 def streamlit_menu():
