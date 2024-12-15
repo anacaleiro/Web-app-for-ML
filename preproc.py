@@ -4,8 +4,7 @@ import utils as u
 import utils2 as p
 import streamlit as st
 import datetime
-import os 
-import gdown
+
 
 # Scaler
 from sklearn.preprocessing import (

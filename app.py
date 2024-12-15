@@ -11,8 +11,7 @@ import seaborn as sns
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 from sklearn.ensemble import RandomForestClassifier
 from predict import show_predict
-import os 
-import gdown
+
 
 # Load the logo
 img = Image.open("24_Nexus_Analytics.png")
